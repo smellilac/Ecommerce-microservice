@@ -34,3 +34,4 @@ C:\Users\User\source\repos\Ecommerce\Ecommerce.Web\bin\Debug\net8.0\Ecommerce.Mo
 C:\Users\User\source\repos\Ecommerce\Ecommerce.Web\bin\Debug\net8.0\Ecommerce.Model.pdb
 C:\Users\User\source\repos\Ecommerce\Ecommerce.Web\obj\Debug\net8.0\Ecommerce.Web.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\Ecommerce\Ecommerce.Web\obj\Debug\net8.0\Ecommerc.99C26490.Up2Date
+C:\Users\User\source\repos\Ecommerce\Ecommerce.Web\obj\Debug\net8.0\Ecommerce.Web.sourcelink.json

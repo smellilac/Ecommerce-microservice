@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Ecommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\pages\\orderlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\pages\\orderlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F50ED3B-AD12-49AC-9122-0FF74EBF4847}|Ecommerce.Model\\Ecommerce.Model.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.model\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F50ED3B-AD12-49AC-9122-0FF74EBF4847}|Ecommerce.Model\\Ecommerce.Model.csproj|solutionrelative:ecommerce.model\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\pages\\cart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\pages\\productlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\pages\\productlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F50ED3B-AD12-49AC-9122-0FF74EBF4847}|Ecommerce.Model\\Ecommerce.Model.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.model\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F50ED3B-AD12-49AC-9122-0FF74EBF4847}|Ecommerce.Model\\Ecommerce.Model.csproj|solutionrelative:ecommerce.model\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{524CF1FC-9D41-4C71-BCA0-7D6A75F68B7C}|Ecommerce.ProductService\\Ecommerce.ProductService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.productservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|solutionrelative:ecommerce.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2D482A9-7224-4DE7-8D48-E724268E95E0}|Ecommerce.Web\\Ecommerce.Web.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -101,7 +105,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -117,7 +121,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "OrderList.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\OrderList.razor",
+              "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\OrderList.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\OrderList.razor",
+              "RelativeToolTip": "Ecommerce.Web\\Components\\Pages\\OrderList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-02T11:00:36.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Properties\\launchSettings.json",
@@ -129,32 +146,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Cart.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Cart.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Cart.razor",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Cart.razor",
               "RelativeToolTip": "Ecommerce.Web\\Components\\Pages\\Cart.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADYAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-01T15:59:24.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProductList.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\ProductList.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\ProductList.razor",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\ProductList.razor",
               "RelativeToolTip": "Ecommerce.Web\\Components\\Pages\\ProductList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T15:18:53.964Z"
+              "WhenOpened": "2025-03-01T15:18:53.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Home.razor",
@@ -166,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Error.razor",
@@ -178,19 +196,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Layout\\NavMenu.razor",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "Ecommerce.Web\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T15:18:37.886Z"
+              "WhenOpened": "2025-03-01T15:18:37.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Layout\\MainLayout.razor",
@@ -202,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Program.cs",
@@ -214,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\appsettings.json",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\appsettings.json",
@@ -226,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Controllers\\OrderController.cs",
@@ -238,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Counter.razor",
@@ -250,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Program.cs",
@@ -262,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "OrderDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Data\\OrderDbContext.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Data\\OrderDbContext.cs",
@@ -274,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Controllers\\ProductController.cs",
@@ -286,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\appsettings.json",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\appsettings.json",
@@ -298,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Program.cs",
@@ -310,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ProductDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Data\\ProductDbContext.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Data\\ProductDbContext.cs",
@@ -322,19 +341,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "OrderModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\OrderModel.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\OrderModel.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\OrderModel.cs",
               "RelativeToolTip": "Ecommerce.Model\\OrderModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T11:34:08.483Z"
+              "WhenOpened": "2025-02-05T11:34:08.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\ProductModel.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\ProductModel.cs",
@@ -346,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Ecommerce.ProductService.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Ecommerce.ProductService.csproj",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Ecommerce.ProductService.csproj",
@@ -358,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.AppHost\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.AppHost\\Program.cs",
@@ -370,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Ecommerce.Model.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\Ecommerce.Model.csproj",
               "RelativeDocumentMoniker": "Ecommerce.Model\\Ecommerce.Model.csproj",
@@ -382,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Aspire.Hosting.AppHost.targets",
               "DocumentMoniker": "C:\\Users\\User\\.nuget\\packages\\aspire.hosting.apphost\\9.0.0\\build\\Aspire.Hosting.AppHost.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\aspire.hosting.apphost\\9.0.0\\build\\Aspire.Hosting.AppHost.targets",
