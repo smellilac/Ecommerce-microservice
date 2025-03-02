@@ -1,0 +1,74 @@
+﻿@page "/cart/{ProductId:int}"
+@using Ecommerce.Model
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime
+@inject ILogger<Cart> Logger
+@using Microsoft.AspNetCore.Components
+@rendermode InteractiveServer
+
+<h3>Cart</h3>
+
+<form>
+    <div class="form-group mb-4">
+        <label for="exampleInputEmail1">Customer name</label>
+        <input type="text" class="form-control" @bind="Order.CustomerName">
+    </div>
+    <div class="form-group mb-4">
+        <label for="exampleInputPassword1">Product name</label>
+        <input type="text" class="form-control" @bind="Product.Name" disabled>
+    </div>
+    <div class="form-group mb-4">
+        <label for="exampleInputPassword1">Quantity</label>
+        <input type="number" class="form-control" @bind="Order.Quantity">
+    </div>
+    <button class="btn btn-primary" @onclick="CreateOrderAsync">Create order</button>
+</form>
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+    private OrderModel Order = new OrderModel();
+    private ProductModel Product = new ProductModel();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Order.ProductId = ProductId;
+
+        try
+        {
+            Logger.LogInformation("Fetching product details for ProductId: {ProductId}", ProductId);
+            Product = await Http.GetFromJsonAsync<ProductModel>($"https://localhost:7081/api/product/{ProductId}");
+            Logger.LogInformation("Product details loaded: {@Product}", Product);
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error fetching product details for ProductId: {ProductId}", ProductId);
+            await JsRuntime.InvokeVoidAsync("alert", "Failed to load product details.");
+        }
+    }
+
+    public async Task CreateOrderAsync()
+    {
+        try
+        {
+            Logger.LogInformation("Creating order: {@Order}", Order);
+            var res = await Http.PostAsJsonAsync<OrderModel>("https://localhost:7000/api/order", Order);
+
+            if (res.IsSuccessStatusCode)
+            {
+                Logger.LogInformation("Order created successfully: {@Order}", Order);
+                await JsRuntime.InvokeVoidAsync("alert", "Create order success");
+            }
+            else
+            {
+                Logger.LogWarning("Failed to create order: {@Order}, StatusCode: {StatusCode}", Order, res.StatusCode);
+                await JsRuntime.InvokeVoidAsync("alert", "Failed to create order.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error creating order: {@Order}", Order);
+            await JsRuntime.InvokeVoidAsync("alert", "An error occurred while creating the order.");
+        }
+    }
+}
