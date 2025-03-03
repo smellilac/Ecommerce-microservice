@@ -9,3 +9,4 @@ C:\Users\User\source\repos\Ecommerce\Ecommerce.Model\obj\Debug\net8.0\Ecommerce.
 C:\Users\User\source\repos\Ecommerce\Ecommerce.Model\obj\Debug\net8.0\refint\Ecommerce.Model.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.Model\obj\Debug\net8.0\Ecommerce.Model.pdb
 C:\Users\User\source\repos\Ecommerce\Ecommerce.Model\obj\Debug\net8.0\ref\Ecommerce.Model.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.Model\obj\Debug\net8.0\Ecommerce.Model.sourcelink.json

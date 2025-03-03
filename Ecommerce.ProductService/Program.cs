@@ -1,4 +1,5 @@
 using Ecommerce.ProductService.Data;
+using Ecommerce.ProductService.Kafka.Consumer;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ProductDbContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("ProductConnection")));
 
+builder.Services.AddHostedService<KafkaConsumer>();
 
 var app = builder.Build();
 
