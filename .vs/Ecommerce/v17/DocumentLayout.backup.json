@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Ecommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\commands\\createorder\\createordercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\commands\\createorder\\createordercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\commands\\createorder\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\commands\\createorder\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\commands\\createorder\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\commands\\createorder\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\outbox\\outboxprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\commands\\createorder\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\commands\\createorder\\createordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\kafka\\producer\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\kafka\\producer\\kafkaproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.orderservice\\commands\\createorder\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CF74CD6-9194-48CD-8B55-3F57769ACF63}|Ecommerce.OrderService\\Ecommerce.OrderService.csproj|solutionrelative:ecommerce.orderservice\\commands\\createorder\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F50ED3B-AD12-49AC-9122-0FF74EBF4847}|Ecommerce.Model\\Ecommerce.Model.csproj|c:\\users\\user\\source\\repos\\ecommerce\\ecommerce.model\\outboxordermessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,33 +154,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OutBoxProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
-              "RelativeDocumentMoniker": "Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
-              "RelativeToolTip": "Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CreateOrderCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Commands\\CreateOrder\\CreateOrderCommandValidator.cs",
+              "RelativeDocumentMoniker": "Ecommerce.OrderService\\Commands\\CreateOrder\\CreateOrderCommandValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Commands\\CreateOrder\\CreateOrderCommandValidator.cs",
+              "RelativeToolTip": "Ecommerce.OrderService\\Commands\\CreateOrder\\CreateOrderCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T14:02:30.398Z",
+              "WhenOpened": "2025-03-05T15:38:09.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IKafkaProducer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
-              "RelativeDocumentMoniker": "Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
-              "RelativeToolTip": "Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T13:27:48.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "KafkaProducer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Kafka\\Producer\\KafkaProducer.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Kafka\\Producer\\KafkaProducer.cs",
@@ -189,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CreateOrderCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Commands\\CreateOrder\\CreateOrderCommand.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Commands\\CreateOrder\\CreateOrderCommand.cs",
@@ -214,8 +205,42 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "IKafkaProducer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
+              "RelativeDocumentMoniker": "Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
+              "RelativeToolTip": "Ecommerce.OrderService\\Kafka\\Producer\\IKafkaProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T13:27:48.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OutBoxProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
+              "RelativeDocumentMoniker": "Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
+              "RelativeToolTip": "Ecommerce.OrderService\\OutBox\\OutBoxProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:02:30.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Program.cs",
@@ -228,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "OrderDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Data\\OrderDbContext.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Data\\OrderDbContext.cs",
@@ -241,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "OutboxOrderMessage.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\OutboxOrderMessage.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\OutboxOrderMessage.cs",
@@ -254,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Controllers\\OrderController.cs",
@@ -267,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "OutboxMessageStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\OutboxMessageStatus.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\OutboxMessageStatus.cs",
@@ -280,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "OrderModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\OrderModel.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\OrderModel.cs",
@@ -293,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "OrderMessage.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\OrderMessage.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\OrderMessage.cs",
@@ -306,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "OrderList.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\OrderList.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\OrderList.razor",
@@ -319,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "KafkaConsumer.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Kafka\\Consumer\\KafkaConsumer.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Kafka\\Consumer\\KafkaConsumer.cs",
@@ -331,29 +356,21 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Cart.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Cart.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Cart.razor",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Cart.razor",
               "RelativeToolTip": "Ecommerce.Web\\Components\\Pages\\Cart.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADYAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwDYAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-05T11:39:10.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Error.razor",
@@ -366,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Layout\\NavMenu.razor",
@@ -379,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Layout\\MainLayout.razor",
@@ -392,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Controllers\\ProductController.cs",
@@ -405,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.AppHost\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.AppHost\\Program.cs",
@@ -418,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\App.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\App.razor",
@@ -431,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\_Imports.razor",
@@ -444,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Routes.razor",
@@ -457,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Components\\Pages\\Home.razor",
@@ -470,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Web\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.Web\\Program.cs",
@@ -483,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Program.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Program.cs",
@@ -496,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\ProductModel.cs",
               "RelativeDocumentMoniker": "Ecommerce.Model\\ProductModel.cs",
@@ -509,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Ecommerce.OrderService.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Ecommerce.OrderService.csproj",
               "RelativeDocumentMoniker": "Ecommerce.OrderService\\Ecommerce.OrderService.csproj",
@@ -522,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\appsettings.json",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\appsettings.json",
@@ -535,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ProductDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Data\\ProductDbContext.cs",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Data\\ProductDbContext.cs",
@@ -548,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Ecommerce.ProductService.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Ecommerce.ProductService.csproj",
               "RelativeDocumentMoniker": "Ecommerce.ProductService\\Ecommerce.ProductService.csproj",
@@ -561,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Ecommerce.Model.csproj",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.Model\\Ecommerce.Model.csproj",
               "RelativeDocumentMoniker": "Ecommerce.Model\\Ecommerce.Model.csproj",
