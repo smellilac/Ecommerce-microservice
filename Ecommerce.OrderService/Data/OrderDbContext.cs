@@ -6,6 +6,7 @@ namespace Ecommerce.OrderService.Data;
 public class OrderDbContext : DbContext
 {
     public DbSet<OrderModel> Orders { get; set; }
+    public DbSet<OutboxOrderMessage> OutboxOrders { get; set; }
     public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options) 
     {
         Database.EnsureCreated(); 
