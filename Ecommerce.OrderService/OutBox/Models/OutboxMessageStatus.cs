@@ -1,4 +1,4 @@
-﻿namespace Ecommerce.Model;
+﻿namespace Ecommerce.OrderService.OutBox.Models;
 
 public enum OutboxMessageStatus
 {
