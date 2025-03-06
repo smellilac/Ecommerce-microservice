@@ -36,13 +36,6 @@ public class CreateOrderCommandHandler(OrderDbContext context, IKafkaProducer pr
                 Type = "OrderCreated"
             };
 
-
-            await producer.ProduceAsync("order-topic", new Message<string, string>
-            {
-                Key = order.Id.ToString(),
-                Value = JsonSerializer.Serialize(order)
-            });
-
             await _context.OutboxOrders.AddAsync(outboxMessage, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
             await transaction.CommitAsync(cancellationToken);

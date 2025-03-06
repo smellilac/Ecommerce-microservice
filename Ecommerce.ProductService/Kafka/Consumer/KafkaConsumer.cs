@@ -39,6 +39,7 @@ public class KafkaConsumer(IServiceScopeFactory scopeFactory) : BackgroundServic
             {
                 product.Quantity -= order.Quantity;
                 await dbContext.SaveChangesAsync();
+
             }
         }
         consumer.Close();
