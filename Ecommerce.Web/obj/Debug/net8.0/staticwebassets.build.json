@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "j0VksIqxSGv9W6SNvTGSGnPVV58Z2NbjID15zxY0tzA=",
+  "Hash": "TLXJ7S3qA1FZS7aFcNi01+yNZnghy8yGg3mgMhalWnY=",
   "Source": "Ecommerce.Web",
   "BasePath": "_content/Ecommerce.Web",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.OrderService\\Ecommerce.OrderService.csproj",
+      "Version": 2,
+      "Source": "Ecommerce.OrderService",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "Ecommerce.Web\\wwwroot",

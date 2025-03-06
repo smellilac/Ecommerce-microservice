@@ -4,21 +4,22 @@ using Ecommerce.OrderService.Data;
 using Ecommerce.OrderService.Kafka.Producer;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
+using Ecommerce.OrderService.OutBox.Models;
 
 namespace Ecommerce.OrderService.OutBox;
 
-public class OutBoxProcessor(IServiceScopeFactory scopeFactory, IKafkaProducer producer) : BackgroundService
+public class OutBoxProcessor(IServiceScopeFactory scopeFactory) : BackgroundService
 {
     private readonly IServiceScopeFactory _scopeFactory = scopeFactory;
-    private readonly IKafkaProducer _producer = producer;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         using var scope = _scopeFactory.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<OrderDbContext>();
+        var _producer = scope.ServiceProvider.GetRequiredService<IKafkaProducer>();
 
         var messages = await context.OutboxOrders.
-             Where(m => m.Status == Model.OutboxMessageStatus.InProgress && m.ResendTime <= DateTime.UtcNow)
+             Where(m => m.Status == OutboxMessageStatus.InProgress && m.ResendTime <= DateTime.UtcNow)
              .ToListAsync(stoppingToken);
 
         foreach (var message in messages)

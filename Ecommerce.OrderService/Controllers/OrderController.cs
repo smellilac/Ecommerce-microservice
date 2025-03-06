@@ -7,16 +7,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.OrderService.Controllers;
 
-[Microsoft.AspNetCore.Mvc.Route("api/[controller]")]
+[Route("api/[controller]")]
 [ApiController]
-public class OrderController(OrderDbContext context, IMediator mediator) : ControllerBase
+public class OrderController(OrderDbContext context, IMediator mediator, ILogger<OrderController> logger) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
     private readonly OrderDbContext _context = context;
+    private readonly ILogger<OrderController> _logger = logger;
 
     [HttpGet]
     public async Task<List<OrderModel>> GetOrders()
-         => await _context.Orders.ToListAsync();
+        => await _context.Orders.ToListAsync();
+
 
     [HttpPost]
     public async Task<OrderModel> CreateOrder(CreateOrderCommand order)

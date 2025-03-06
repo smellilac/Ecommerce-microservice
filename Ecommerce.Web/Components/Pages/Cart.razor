@@ -1,8 +1,8 @@
 ﻿@page "/cart/{ProductId:int}"
 @using Ecommerce.Model
 @inject HttpClient Http
-@inject IJSRuntime JsRuntime
 @inject ILogger<Cart> Logger
+@using Ecommerce.OrderService.Commands.CreateOrder
 @using Microsoft.AspNetCore.Components
 @rendermode InteractiveServer
 
@@ -27,7 +27,7 @@
 @code {
     [Parameter]
     public int ProductId { get; set; }
-    private OrderModel Order = new OrderModel();
+    private CreateOrderCommand Order = new CreateOrderCommand();
     private ProductModel Product = new ProductModel();
 
     protected override async Task OnInitializedAsync()
@@ -43,7 +43,6 @@
         catch (Exception ex)
         {
             Logger.LogError(ex, "Error fetching product details for ProductId: {ProductId}", ProductId);
-            await JsRuntime.InvokeVoidAsync("alert", "Failed to load product details.");
         }
     }
 
@@ -52,23 +51,20 @@
         try
         {
             Logger.LogInformation("Creating order: {@Order}", Order);
-            var res = await Http.PostAsJsonAsync<OrderModel>("https://localhost:7000/api/order", Order);
+            var res = await Http.PostAsJsonAsync<CreateOrderCommand>("https://localhost:7000/api/order", Order);
 
             if (res.IsSuccessStatusCode)
             {
                 Logger.LogInformation("Order created successfully: {@Order}", Order);
-                await JsRuntime.InvokeVoidAsync("alert", "Create order success");
             }
             else
             {
                 Logger.LogWarning("Failed to create order: {@Order}, StatusCode: {StatusCode}", Order, res.StatusCode);
-                await JsRuntime.InvokeVoidAsync("alert", "Failed to create order.");
             }
         }
         catch (Exception ex)
         {
             Logger.LogError(ex, "Error creating order: {@Order}", Order);
-            await JsRuntime.InvokeVoidAsync("alert", "An error occurred while creating the order.");
         }
     }
 }

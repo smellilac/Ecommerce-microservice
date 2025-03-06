@@ -29,7 +29,7 @@
     "Parameters": [
       {
         "Name": "order",
-        "Type": "Ecommerce.Model.OrderModel",
+        "Type": "Ecommerce.OrderService.Commands.CreateOrder.CreateOrderCommand",
         "IsRequired": true
       }
     ],

@@ -15,6 +15,8 @@ builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 builder.Services.AddDbContext<OrderDbContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("OrderConnection")));
 
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -22,6 +24,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var dbContext = scope.ServiceProvider.GetRequiredService<OrderDbContext>();
+//    dbContext.Database.Migrate();
+//}
 
 app.UseHttpsRedirection();
 
