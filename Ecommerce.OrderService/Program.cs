@@ -15,8 +15,6 @@ builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 builder.Services.AddDbContext<OrderDbContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("OrderConnection")));
 
-
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

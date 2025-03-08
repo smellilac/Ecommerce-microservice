@@ -3,9 +3,7 @@ using Ecommerce.Model;
 using Ecommerce.OrderService.Data;
 using Ecommerce.OrderService.Kafka.Producer;
 using Ecommerce.OrderService.OutBox.Models;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Npgsql;
 using System.Text.Json;
 
@@ -13,7 +11,6 @@ public class OutBoxProcessor(IServiceScopeFactory scopeFactory, IConfiguration c
 {
     private readonly IServiceScopeFactory _scopeFactory = scopeFactory;
     private readonly IConfiguration _configuration = configuration;
-
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -49,7 +46,7 @@ public class OutBoxProcessor(IServiceScopeFactory scopeFactory, IConfiguration c
             }
             await CleanUpProcessedMessagesAsync(context, stoppingToken);
             await context.SaveChangesAsync(stoppingToken);
-            await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken);  
+            await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken);
         }
     }
 

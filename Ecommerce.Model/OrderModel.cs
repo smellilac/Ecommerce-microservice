@@ -7,4 +7,5 @@ public class OrderModel
     public string CustomerName { get; set; }
     public int Quantity { get; set; }
     public DateTime OrderDate { get; set; }
+    public Guid RequestId { get; set; }
 }

@@ -2,7 +2,6 @@
 using Ecommerce.ProductService.Data;
 using Ecommerce.ProductService.Query;
 using MediatR;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +16,7 @@ public class ProductController(ProductDbContext context, IMediator mediator) : C
 
     [HttpGet]
     public async Task<List<ProductModel>> GetProducts()
-        => await context.Products.ToListAsync();
+        => await _context.Products.ToListAsync();
 
     [HttpGet("{id}")]
     public async Task<ProductModel> GetProductById(int id)

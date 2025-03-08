@@ -8,7 +8,7 @@ using MediatR;
 using System.Text.Json;
 using static Confluent.Kafka.ConfigPropertyNames;
 
-public class CreateOrderCommandHandler(OrderDbContext context, IKafkaProducer producer) : IRequestHandler<CreateOrderCommand, OrderModel>
+public class CreateOrderCommandHandler(OrderDbContext context) : IRequestHandler<CreateOrderCommand, OrderModel>
 {
     private readonly OrderDbContext _context = context;
 
@@ -23,6 +23,7 @@ public class CreateOrderCommandHandler(OrderDbContext context, IKafkaProducer pr
                 ProductId = request.ProductId,
                 CustomerName = request.CustomerName,
                 OrderDate = DateTime.UtcNow,
+                RequestId = Guid.NewGuid()
             };
 
             await _context.Orders.AddAsync(order, cancellationToken);

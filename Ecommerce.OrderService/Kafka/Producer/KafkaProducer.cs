@@ -21,11 +21,9 @@ public class KafkaProducer : IKafkaProducer, IDisposable
         try
         {
             var deliveryResult = await _producer.ProduceAsync(topic, message);
-            // log
         }
         catch (ProduceException<string, string> ex)
         {
-            // logs later
         }
     }
 

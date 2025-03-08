@@ -166,3 +166,6 @@ C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\t
 C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\StackExchange.Redis.dll

@@ -1,21 +1,15 @@
 ﻿using Confluent.Kafka;
 using Ecommerce.Model;
-using Ecommerce.ProductService.Data;
 using System.Text.Json;
 
 namespace Ecommerce.ProductService.Kafka.Consumer;
 
-public class KafkaConsumer(IServiceScopeFactory scopeFactory) : BackgroundService
+public class KafkaConsumer 
 {
-    protected override Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        return Task.Run(() =>
-        {
-            _ = ConsumeAsync("order-topic", stoppingToken);
-        }, stoppingToken);
-    }
+    private readonly IConsumer<string, string> _consumer;
+    private bool _disposed = false;
 
-    public async Task ConsumeAsync(string topic, CancellationToken stoppingToken)
+    public KafkaConsumer()
     {
         var config = new ConsumerConfig
         {
@@ -23,25 +17,48 @@ public class KafkaConsumer(IServiceScopeFactory scopeFactory) : BackgroundServic
             BootstrapServers = "localhost:9092",
             AutoOffsetReset = AutoOffsetReset.Earliest
         };
-        using var consumer = new ConsumerBuilder<string, string>(config).Build();
 
-        consumer.Subscribe(topic);
-        while (!stoppingToken.IsCancellationRequested)
+        _consumer = new ConsumerBuilder<string, string>(config).Build();
+        _consumer.Subscribe("order-topic");
+    }
+
+    public async Task<OrderModel?> ConsumeAsync(CancellationToken stoppingToken)
+    {
+        try
         {
-            var consumeResult = consumer.Consume(stoppingToken);
+            var consumeResult = await Task.Run(() => _consumer.Consume(stoppingToken), stoppingToken);
 
-            var order = JsonSerializer.Deserialize<OrderMessage>(consumeResult.Message.Value);
-            using var scope = scopeFactory.CreateScope();
-            var dbContext = scope.ServiceProvider.GetRequiredService<ProductDbContext>();
+            if (consumeResult?.Message?.Value == null)
+                return null;
 
-            var product = await dbContext.Products.FindAsync(order.ProductId);
-            if (product != null)
-            {
-                product.Quantity -= order.Quantity;
-                await dbContext.SaveChangesAsync();
-
-            }
+            return JsonSerializer.Deserialize<OrderModel>(consumeResult.Message.Value);
         }
-        consumer.Close();
+        catch (ConsumeException ex)
+        {
+            Console.WriteLine($"Kafka Consume Error: {ex.Error.Reason}");
+            return null;
+        }
+        catch (ObjectDisposedException ex)
+        {
+            Console.WriteLine($"Consumer has been disposed: {ex.Message}");
+            return null;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Unexpected Error: {ex.Message}");
+            return null;
+        }
+    }
+
+
+    public void Dispose()
+    {
+        if (!_disposed)
+        {
+            _consumer.Unsubscribe();
+            _consumer.Close();
+            _consumer.Dispose();
+            _disposed = true;
+        }
     }
 }

@@ -14,7 +14,16 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.Get
 builder.Services.AddDbContext<ProductDbContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("ProductConnection")));
 
-builder.Services.AddHostedService<KafkaConsumer>();
+builder.Services.AddHostedService<HostedKafkaConsumer>();
+builder.Services.AddSingleton<KafkaConsumer>();
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    var redisConnectionString = builder.Configuration.GetValue<string>("Redis:ConnectionString");
+    options.Configuration = redisConnectionString; // Убедитесь, что строка подключения правильная
+    options.InstanceName = "EcommerceProductService:";  // Можно добавить имя инстанса для лучшей идентификации
+});
+
+
 
 var app = builder.Build();
 
