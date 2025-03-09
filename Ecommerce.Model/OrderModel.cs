@@ -8,4 +8,9 @@ public class OrderModel
     public int Quantity { get; set; }
     public DateTime OrderDate { get; set; }
     public Guid RequestId { get; set; }
+
+    public override string ToString()
+    {
+        return $"Order (Id: {Id}, ProductId: {ProductId}, Customer: {CustomerName}, Quantity: {Quantity}, OrderDate: {OrderDate}, RequestId: {RequestId})";
+    }
 }

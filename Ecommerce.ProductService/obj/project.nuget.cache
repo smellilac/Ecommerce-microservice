@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pc9chY+EGrk=",
+  "dgSpecHash": "cwtn9GM/QJw=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\Ecommerce\\Ecommerce.ProductService\\Ecommerce.ProductService.csproj",
   "expectedPackageFiles": [
@@ -31,24 +31,44 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.1\\microsoft.extensions.caching.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.1\\microsoft.extensions.caching.memory.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\9.0.1\\microsoft.extensions.caching.stackexchangeredis.9.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.1\\microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.0\\microsoft.extensions.configuration.binder.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.1\\microsoft.extensions.dependencyinjection.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.1\\microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.1\\microsoft.extensions.dependencymodel.9.0.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\microsoft.extensions.diagnostics.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\9.0.0\\microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\8.0.11\\microsoft.extensions.diagnostics.healthchecks.8.0.11.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\8.0.11\\microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.11.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.0\\microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\9.0.0\\microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging\\9.0.1\\microsoft.extensions.logging.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.1\\microsoft.extensions.logging.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.logging.configuration\\9.0.0\\microsoft.extensions.logging.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.options\\9.0.1\\microsoft.extensions.options.9.0.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\9.0.0\\microsoft.extensions.options.configurationextensions.9.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.3\\npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry\\1.11.2\\opentelemetry.1.11.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry.api\\1.11.2\\opentelemetry.api.1.11.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.11.2\\opentelemetry.api.providerbuilderextensions.1.11.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry.exporter.jaeger\\1.5.1\\opentelemetry.exporter.jaeger.1.5.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.11.2\\opentelemetry.extensions.hosting.1.11.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.11.1\\opentelemetry.instrumentation.aspnetcore.1.11.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.11.1\\opentelemetry.instrumentation.http.1.11.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.aspnetcore\\9.0.0\\serilog.aspnetcore.9.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.extensions.hosting\\9.0.0\\serilog.extensions.hosting.9.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.extensions.logging\\9.0.0\\serilog.extensions.logging.9.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.formatting.compact\\3.0.0\\serilog.formatting.compact.3.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.settings.configuration\\9.0.0\\serilog.settings.configuration.9.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.sinks.debug\\3.0.0\\serilog.sinks.debug.3.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
@@ -68,14 +88,8 @@
     "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.text.encodings.web\\9.0.1\\system.text.encodings.web.9.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.text.json\\9.0.1\\system.text.json.9.0.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "No Authorization header detected"
-    }
-  ]
+  "logs": []
 }

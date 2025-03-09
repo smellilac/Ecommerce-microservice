@@ -1,13 +1,15 @@
 using Confluent.Kafka;
 using Ecommerce.ProductService.Data;
+using Ecommerce.ProductService.DI;
 using Ecommerce.ProductService.Kafka.Consumer;
 using HealthChecks.Kafka;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
+SerilogProductLogging.ConfigureLogging();
+builder.ConfigureOpenTelemetry();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -21,13 +23,15 @@ builder.Services.AddSingleton<KafkaConsumer>();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     var redisConnectionString = builder.Configuration.GetValue<string>("Redis:ConnectionString");
-    options.Configuration = redisConnectionString; // Убедитесь, что строка подключения правильная
-    options.InstanceName = "EcommerceProductService:";  // Можно добавить имя инстанса для лучшей идентификации
+    options.Configuration = redisConnectionString; 
+    options.InstanceName = "EcommerceProductService:";  
 });
 
 builder.Services.AddHealthChecks()
     .AddNpgSql(builder.Configuration.GetConnectionString("ProductConnection"))
     .AddRedis(builder.Configuration.GetValue<string>("Redis:ConnectionString"));
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 

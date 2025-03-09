@@ -1,6 +1,8 @@
 ﻿using Ecommerce.ProductService.Data;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.Text.Json;
 
 namespace Ecommerce.ProductService.Kafka.Consumer;
 
@@ -27,64 +29,85 @@ public class HostedKafkaConsumer : BackgroundService, IDisposable
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            try
+            using (var activity = new Activity("ConsumeKafkaMessage"))
             {
-                _logger.LogInformation("Waiting for Kafka message...");
+                activity.Start();  
 
-                // Log before consuming a message from Kafka
-                _logger.LogInformation("Attempting to consume message from Kafka...");
-                var order = await _consumer.ConsumeAsync(stoppingToken);
-
-                if (order == null)
+                try
                 {
-                    _logger.LogInformation("No order message received from Kafka.");
-                    continue;
+                    _logger.LogInformation("Waiting for Kafka message...");
+
+                    _logger.LogInformation("Attempting to consume message from Kafka...");
+                    var order = await _consumer.ConsumeAsync(stoppingToken);
+
+                    if (order == null)
+                    {
+                        _logger.LogInformation("No order message received from Kafka.");
+                        activity.SetTag("consumeResult", "null");
+                        continue;
+                    }
+
+                    _logger.LogInformation($"Received order {order}");
+                    activity.SetTag("orderRequestId", order.RequestId);
+                    activity.SetTag("orderProductId", order.ProductId);
+
+                    using var scope = _scopeFactory.CreateScope();
+                    var dbContext = scope.ServiceProvider.GetRequiredService<ProductDbContext>();
+
+                    // Логирование поиска продукта в базе данных
+                    activity.AddEvent(new ActivityEvent("SearchingProductInDb"));
+                    var product = await dbContext.Products.FindAsync(order.ProductId);
+
+                    if (product == null)
+                    {
+                        _logger.LogWarning("Product {product} not found in the database.", product);
+                        activity.SetTag("productFound", "false");
+                        continue;
+                    }
+
+                    activity.SetTag("productFound", "true");
+
+                    var cacheKey = $"RequestId:{order.RequestId}";
+                    _logger.LogInformation($"Checking cache for RequestId: {order.RequestId}...");
+                    activity.AddEvent(new ActivityEvent("CheckingCache"));
+                    var processed = await _cache.GetStringAsync(cacheKey);
+
+                    if (!string.IsNullOrEmpty(processed))
+                    {
+                        _logger.LogInformation($"Order with RequestId: {order.RequestId} already processed. Skipping.");
+                        activity.SetTag("orderProcessed", "true");
+                        continue;
+                    }
+
+                    _logger.LogInformation("Updating product {product}", product);
+                    activity.AddEvent(new ActivityEvent("UpdatingProduct"));
+                    product.Quantity -= order.Quantity;
+                    await dbContext.SaveChangesAsync();
+
+                    _logger.LogInformation($"Product new Quantity: {product.Quantity}");
+
+                    var options = new DistributedCacheEntryOptions
+                    {
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
+                    };
+
+                    _logger.LogInformation($"Updating cache with processed flag for RequestId: {order.RequestId}");
+                    activity.AddEvent(new ActivityEvent("UpdatingCache"));
+                    await _cache.SetStringAsync(cacheKey, "processed", options);
+
+                    _logger.LogInformation($"Cache updated with processed flag for RequestId: {order.RequestId}");
+                    activity.SetTag("cacheUpdated", "true");
                 }
-
-                _logger.LogInformation($"Received order with RequestId: {order.RequestId} and ProductId: {order.ProductId}");
-
-                using var scope = _scopeFactory.CreateScope();
-                var dbContext = scope.ServiceProvider.GetRequiredService<ProductDbContext>();
-
-                _logger.LogInformation($"Searching for Product with ProductId: {order.ProductId} in the database...");
-                var product = await dbContext.Products.FindAsync(order.ProductId);
-
-                if (product == null)
+                catch (Exception ex)
                 {
-                    _logger.LogWarning($"Product with ProductId: {order.ProductId} not found in the database.");
-                    continue;
+                    _logger.LogError(ex, "Kafka Consumer Error");
+                    activity.SetTag("error", true);
+                    activity.SetTag("errorMessage", ex.Message);
                 }
-
-                var cacheKey = $"RequestId:{order.RequestId}";
-                _logger.LogInformation($"Checking cache for RequestId: {order.RequestId}...");
-                var processed = await _cache.GetStringAsync(cacheKey);
-
-                if (!string.IsNullOrEmpty(processed))
+                finally
                 {
-                    _logger.LogInformation($"Order with RequestId: {order.RequestId} already processed. Skipping.");
-                    continue;
+                    activity.Stop();
                 }
-
-                _logger.LogInformation($"Updating product with ProductId: {order.ProductId}. Current Quantity: {product.Quantity}");
-                product.Quantity -= order.Quantity;
-                await dbContext.SaveChangesAsync();
-
-                _logger.LogInformation($"Product with ProductId: {order.ProductId} updated. New Quantity: {product.Quantity}");
-
-                var options = new DistributedCacheEntryOptions
-                {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
-                };
-
-                _logger.LogInformation($"Updating cache with processed flag for RequestId: {order.RequestId}");
-                await _cache.SetStringAsync(cacheKey, "processed", options);
-
-                _logger.LogInformation($"Cache updated with processed flag for RequestId: {order.RequestId}");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Kafka Consumer Error: {ex.Message}");
-                _logger.LogError(ex, "Stack trace of the exception:");
             }
         }
     }
