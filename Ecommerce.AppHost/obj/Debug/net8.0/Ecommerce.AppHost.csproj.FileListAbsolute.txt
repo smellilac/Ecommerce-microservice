@@ -55,3 +55,4 @@ C:\Users\User\source\repos\Ecommerce\Ecommerce.AppHost\obj\Debug\net8.0\refint\E
 C:\Users\User\source\repos\Ecommerce\Ecommerce.AppHost\obj\Debug\net8.0\Ecommerce.AppHost.pdb
 C:\Users\User\source\repos\Ecommerce\Ecommerce.AppHost\obj\Debug\net8.0\Ecommerce.AppHost.genruntimeconfig.cache
 C:\Users\User\source\repos\Ecommerce\Ecommerce.AppHost\obj\Debug\net8.0\ref\Ecommerce.AppHost.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.AppHost\obj\Debug\net8.0\Ecommerce.AppHost.sourcelink.json

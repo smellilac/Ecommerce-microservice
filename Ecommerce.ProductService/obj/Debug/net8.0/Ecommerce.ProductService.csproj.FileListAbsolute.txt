@@ -169,3 +169,10 @@ C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\r
 C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\HealthChecks.Kafka.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\HealthChecks.NpgSql.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\HealthChecks.Redis.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.ProductService\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll

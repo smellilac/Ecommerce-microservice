@@ -1,6 +1,8 @@
+using Confluent.Kafka;
 using Ecommerce.OrderService.Data;
 using Ecommerce.OrderService.Kafka.Producer;
 using Ecommerce.OrderService.OutBox;
+using HealthChecks.Kafka;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -14,6 +16,17 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IKafkaProducer, KafkaProducer>();
 builder.Services.AddDbContext<OrderDbContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("OrderConnection")));
+
+builder.Services.AddHealthChecks()
+    .AddNpgSql(builder.Configuration.GetConnectionString("OrderConnection"))
+    .AddKafka(new KafkaHealthCheckOptions
+    {
+        Configuration = new ProducerConfig
+        {
+            BootstrapServers = builder.Configuration.GetValue<string>("Kafka:BootstrapServers")
+        },
+        Topic = "healthchecks-topic"
+    });
 
 var app = builder.Build();
 
@@ -34,5 +47,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHealthChecks("/health");
 
 app.Run();

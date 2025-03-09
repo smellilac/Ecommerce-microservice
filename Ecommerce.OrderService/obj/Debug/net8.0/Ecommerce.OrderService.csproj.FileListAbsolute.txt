@@ -166,3 +166,9 @@ C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\tr\
 C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\HealthChecks.Kafka.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\HealthChecks.NpgSql.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\User\source\repos\Ecommerce\Ecommerce.OrderService\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll

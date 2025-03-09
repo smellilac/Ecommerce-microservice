@@ -1,5 +1,7 @@
+using Confluent.Kafka;
 using Ecommerce.ProductService.Data;
 using Ecommerce.ProductService.Kafka.Consumer;
+using HealthChecks.Kafka;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -23,7 +25,9 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "EcommerceProductService:";  // Можно добавить имя инстанса для лучшей идентификации
 });
 
-
+builder.Services.AddHealthChecks()
+    .AddNpgSql(builder.Configuration.GetConnectionString("ProductConnection"))
+    .AddRedis(builder.Configuration.GetValue<string>("Redis:ConnectionString"));
 
 var app = builder.Build();
 
@@ -44,5 +48,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHealthChecks("/health");
 
 app.Run();
