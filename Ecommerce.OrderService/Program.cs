@@ -1,5 +1,6 @@
 using Confluent.Kafka;
 using Ecommerce.OrderService.Data;
+using Ecommerce.OrderService.DI;
 using Ecommerce.OrderService.Kafka.Producer;
 using Ecommerce.OrderService.OutBox;
 using HealthChecks.Kafka;
@@ -7,7 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.ConfigureOpenTelemetry();
+SerilogOrderLogging.ConfigureLogging();
 builder.Services.AddHostedService<OutBoxProcessor>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.AddControllers();
@@ -36,11 +38,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var dbContext = scope.ServiceProvider.GetRequiredService<OrderDbContext>();
-//    dbContext.Database.Migrate();
-//}
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<OrderDbContext>();
+    dbContext.Database.Migrate();
+}
 
 app.UseHttpsRedirection();
 

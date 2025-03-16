@@ -4,7 +4,7 @@ using OpenTelemetry.Trace;
 
 namespace Ecommerce.ProductService.DI;
 
-public static class OpenTelemetry
+public static class OpenTelemetryProduct
 {
     public static void ConfigureOpenTelemetry(this WebApplicationBuilder builder)
     {
